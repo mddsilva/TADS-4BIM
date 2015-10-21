@@ -4,6 +4,11 @@ public class Item {
 	private int value;
 	private int limit;
 
+	public Item(int value, int limit) {
+		this.value = value;
+		this.limit = limit;
+	}
+
 	public int getValue() {
 		return value;
 	}
