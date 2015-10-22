@@ -3,8 +3,10 @@ package br.univel.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.univel.beans.Demo;
 import br.univel.model.Item;
 
+@Demo
 public class DefaultItemDao implements ItemDao {
 
     @Override
