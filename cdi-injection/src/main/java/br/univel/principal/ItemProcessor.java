@@ -6,15 +6,15 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import br.univel.beans.Demo;
 import br.univel.dao.ItemDao;
 import br.univel.model.Item;
+import br.univel.qualifiers.Demo;
 
 @Named
 @RequestScoped
 public class ItemProcessor
 {
-	@Inject
+	@Inject @Demo
 	private ItemDao itemDao;
 
 
