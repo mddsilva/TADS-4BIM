@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:o="http://omnifaces.org/ui">
+
+<body>
+
+	<p:dataTable value="#{ProdutoController.produtos}" var="obj">
+		<p:column>
+			<f:facet name="header">
+				<h:outputText value="Nome do produto" />
+			</f:facet>
+			<h:outputText value="#{obj.soParaDizer}" />
+		</p:column>
+	</p:dataTable>
+</body>
+</html>
